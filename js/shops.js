@@ -38,25 +38,27 @@ var renderAllShops = function() {
 };
 
 var handleShopSubmit = function(event) {
-  event.preventDefault();
 
-    if (!event.target.minCustomerMaker.value) {
+    if (!event.target.mincustomermaker.value) {
       return alert('Shops cannot be empty!');
     }
 
-    var newShop = new Shop(event.target.shopMaker.value, event.target.minCustomerMaker.value);
-    event.target.shopMaker.value = null;
-    event.target.minCustomerMaker.value = null;
+    var newShop = new Shop(event.target.shopmaker.value, event.target.mincustomermaker.value);
+    event.target.shopmaker.value = null;
+    event.target.mincustomermaker.value = null;
     donutData.push(newShop);
     renderAllShops();
 };
 
-donutButton.addEventListener('submit', handleShopSubmit);
-
-clearShops.addEventListener('click', function() {
-  shops.innerHTML = '';
-  donutData = [];
+donutButton.addEventListener('click', function(event) {
+  event.preventDefault();
+  console.log("Is the button working?");
+  handleShopSubmit(event);
+  // shops.innerHTML = '';
+  // donutData = [];
 });
+
+
 
 // Method generating random number of customers
 DonutShop.prototype.generateRandomNumCust = function() {
@@ -74,7 +76,7 @@ DonutShop.prototype.calculateDailyDonuts = function () {
   var x;
   for (var i=0; i < 11; i++) {
     x = this.calculateDonutsPerHour();
-    console.log(x);
+    // console.log(x);
     this.hourlyTotals.push(x);
     this.dailyTotals = this.dailyTotals + x;
   }
