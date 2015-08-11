@@ -30,6 +30,12 @@ Commented out img and css in index, worked bugs out of random customer number ge
 
 Working on calculate number of donuts per hour, keeping getting stuck on NaN - changed syntax, works.
 
+Tuesday 8.11.15
+
 Working on rendering method. Refactored as prototype. Partially working
 
 Tidied up code and comments.
+
+Events- added form to and buttons to html, working on added code to shops.
+
+

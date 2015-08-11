@@ -11,6 +11,53 @@ var DonutShop = function(locationName, minCustPerHour, maxCustPerHour, avgDonutP
   this.dailyTotals = 0;
 };
 
+var Shop = function(shopName, text) {
+  this.shopName = shopName;
+  this.text = text;
+};
+
+Shop.prototype.render = function() {
+  var td = document.createElement('td');
+
+  td.innerHTML = this.shopName = this.text;
+
+  return td;
+};
+
+var shops = document.getElementById('shops');
+var donutForm = document.getElementById('donut-form');
+var donutButton = document.getElementById('donut-button');
+var clearShops = document.getElementById('clear-shops');
+var donutData = [];
+
+var renderAllShops = function() {
+  shops.innerHTML = '';
+  donutData.forEach(function(shop) {
+    shops.appendChild(shop.render());
+  });
+};
+
+var handleShopSubmit = function(event) {
+  event.preventDefault();
+
+    if (!event.target.minCustomerMaker.value) {
+      return alert('Shops cannot be empty!');
+    }
+
+    var newShop = new Shop(event.target.shopMaker.value, event.target.minCustomerMaker.value);
+    event.target.shopMaker.value = null;
+    event.target.minCustomerMaker.value = null;
+    donutData.push(newShop);
+    renderAllShops();
+};
+
+donutButton.addEventListener('submit', handleShopSubmit);
+
+clearShops.addEventListener('click', function() {
+  shops.innerHTML = '';
+  donutData = [];
+});
+
 // Method generating random number of customers
 DonutShop.prototype.generateRandomNumCust = function() {
   return Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour;
@@ -72,6 +119,8 @@ capitolHill.render();
 southLakeUnion.render();
 wedgewood.render();
 ballard.render();
+
+
 
 
 
