@@ -46,7 +46,7 @@ southLakeUnion.calculateDailyDonuts();
 wedgewood.calculateDailyDonuts();
 ballard.calculateDailyDonuts();
 
-// Method to render new row into table with data from corresponding object.
+// Method to render new row into table with data from corresponding object, yo.
 DonutShop.prototype.render = function() {
   var getTable = document.getElementById('donutShops');
   var newRow = document.createElement('tr');
