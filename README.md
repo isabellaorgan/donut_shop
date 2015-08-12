@@ -38,4 +38,6 @@ Tidied up code and comments.
 
 Events- added form to and buttons to html, working on added code to shops.
 
+Still working on getting button to submit form and append table. So close, but yet so far.
+
 
