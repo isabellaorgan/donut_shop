@@ -25,26 +25,13 @@ DonutShop.prototype.calculateDonutsPerHour = function() {
 // Method calculating the sum of hourly totals
 DonutShop.prototype.calculateDailyDonuts = function () {
   var x;
-  for (var i=0; i < 11; i++) {
+  for (var i=0; i < 12; i++) {
     x = this.calculateDonutsPerHour();
-    console.log(x);
+    // console.log(x);
     this.hourlyTotals.push(x);
     this.dailyTotals = this.dailyTotals + x;
   }
 };
-
-// Instantiate new objects to represent each of the five locations.
-var downtown = new DonutShop("Downtown", 8, 43, 4.50);
-var capitolHill = new DonutShop("Capitol Hill", 4, 37, 2.00);
-var southLakeUnion = new DonutShop("South Lake Union", 9, 23, 6.33);
-var wedgewood = new DonutShop("Wedgewood", 2, 28, 1.25);
-var ballard = new DonutShop("Ballard", 8, 58, 3.75);
-
-downtown.calculateDailyDonuts();
-capitolHill.calculateDailyDonuts();
-southLakeUnion.calculateDailyDonuts();
-wedgewood.calculateDailyDonuts();
-ballard.calculateDailyDonuts();
 
 // Method to render new row into table with data from corresponding object, yo.
 DonutShop.prototype.render = function() {
@@ -54,18 +41,26 @@ DonutShop.prototype.render = function() {
   newRow.innerHTML= this.locationName;
   getTable.appendChild(newRow);
   this.calculateDailyDonuts();
-  
+  var newCell;
+
   for (var i = 0; i < 12; i++) {
-    var newCell = document.createElement('td');
+    newCell = document.createElement('td');
     newCell.innerHTML = this.hourlyTotals[i];
     newRow.appendChild(newCell);
   }
 
-  var newCell = document.createElement('td');
+  newCell = document.createElement('td');
   newCell.innerHTML = this.dailyTotals;
   newRow.appendChild(newCell);
 
 };
+
+// Instantiate new objects to represent each of the five locations.
+var downtown = new DonutShop("Downtown", 8, 43, 4.50);
+var capitolHill = new DonutShop("Capitol Hill", 4, 37, 2.00);
+var southLakeUnion = new DonutShop("South Lake Union", 9, 23, 6.33);
+var wedgewood = new DonutShop("Wedgewood", 2, 28, 1.25);
+var ballard = new DonutShop("Ballard", 8, 58, 3.75);
 
 downtown.render();
 capitolHill.render();
@@ -74,12 +69,22 @@ wedgewood.render();
 ballard.render();
 
 
+var donutButton = document.getElementById('donut-button');
+var handleShopSubmit = function() {
+  console.log('click');
+  // var shops = document.getElementById('shops');
+  var donutForm = document.getElementById('donut-form');
+  var newLocation = document.getElementById('locationname').value;
+  var newMincustomers = parseInt(document.getElementById('mincustomers').value);
+  var newMaxcustomers = parseInt(document.getElementById('maxcustomer').value);
+  var avgDonuts = parseInt(document.getElementById('avgdonuts').value);
+  var newShop = new DonutShop(newLocation, newMincustomers, newMaxcustomers, avgDonuts);
+  console.log(newShop);
+  newShop.render();
+  // var donutData = [];
+};
 
-
-
-
-
-
+donutButton.addEventListener('click', handleShopSubmit);
 
 
 
