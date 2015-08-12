@@ -43,5 +43,6 @@ Still working on getting button to submit form and append table. So close, but y
 Got some help to get my form working to propagate and append to table.
 
 Added several css style to style sheet Starting to look good but so much more to add!
+Using this font: https://www.google.com/fonts/specimen/Indie+Flower
 
 
