@@ -41,14 +41,15 @@ DonutShop.prototype.render = function() {
   newRow.innerHTML= this.locationName;
   getTable.appendChild(newRow);
   this.calculateDailyDonuts();
-  
+  var newCell;
+
   for (var i = 0; i < 12; i++) {
-    var newCell = document.createElement('td');
+    newCell = document.createElement('td');
     newCell.innerHTML = this.hourlyTotals[i];
     newRow.appendChild(newCell);
   }
 
-  var newCell = document.createElement('td');
+  newCell = document.createElement('td');
   newCell.innerHTML = this.dailyTotals;
   newRow.appendChild(newCell);
 
@@ -67,76 +68,23 @@ southLakeUnion.render();
 wedgewood.render();
 ballard.render();
 
-downtown.calculateDailyDonuts();
-capitolHill.calculateDailyDonuts();
-southLakeUnion.calculateDailyDonuts();
-wedgewood.calculateDailyDonuts();
-ballard.calculateDailyDonuts();
-
-var Shop = function(shopName, text) {
-  this.shopName = shopName;
-  this.text = text;
-};
-
-Shop.prototype.render = function() {
-  var td = document.createElement('td');
-
-  td.innerHTML = this.shopName = this.text;
-
-  return td;
-};
 
 var donutButton = document.getElementById('donut-button');
 var handleShopSubmit = function() {
-// var shops = document.getElementById('shops');
-var donutForm = document.getElementById('donut-form');
-var newLocation = document.getElementById('locationname');
-var newMincustomers = document.getElementById('mincustomers');
-var newMaxcustomers = document.getElementById('maxcustomers');
-// var donutData = [];
+  console.log('click');
+  // var shops = document.getElementById('shops');
+  var donutForm = document.getElementById('donut-form');
+  var newLocation = document.getElementById('locationname').value;
+  var newMincustomers = parseInt(document.getElementById('mincustomers').value);
+  var newMaxcustomers = parseInt(document.getElementById('maxcustomer').value);
+  var avgDonuts = parseInt(document.getElementById('avgdonuts').value);
+  var newShop = new DonutShop(newLocation, newMincustomers, newMaxcustomers, avgDonuts);
+  console.log(newShop);
+  newShop.render();
+  // var donutData = [];
 };
 
 donutButton.addEventListener('click', handleShopSubmit);
-
-
-var renderAllShops = function() {
-  var shops = document.getElementById('shops');
-  var donutData = [];
-  shops.innerHTML = '';
-  donutData.forEach(function(shop) {
-    shops.appendChild(shop.render());
-  });
-};
-
-// var handleShopSubmit = function(event) {
-
-//     if (!event.target.mincustomers.value) {
-//       return alert('Shops cannot be empty!');
-//     }
-
-//     var newShop = new Shop(event.target.locationname.value, event.target.mincustomer.value);
-//     event.target.locationname.value = null;
-//     event.target.mincustomer.value = null;
-//     donutData.push(newShop);
-//     renderAllShops();
-// };
-
-// donutButton.addEventListener('click', function(event) {
-//   event.preventDefault();
-//   console.log("Is the button working?");
-//   handleShopSubmit(event);
-//   // shops.innerHTML = '';
-//   // donutData = [];
-// });
-
-
-
-
-
-
-
-
-
 
 
 
