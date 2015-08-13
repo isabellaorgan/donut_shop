@@ -52,5 +52,6 @@ Thursday 8.12.15
 Fixed up some more of the styles.
 Began working on layout.
 Working on getting elements to float.
+Made page fluid width, set header as fixed with elements below it set to relative
 
 

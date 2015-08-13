@@ -18,6 +18,8 @@ Animations*/
 	font-family: Arial, Verdana, sans-serif;
 	font-size: 16px;}
 #page {
+	position: relative;
+	top: 125px;
 	max-width: 940px;
 	min-width: 720px;
 	margin: 10px auto 10px auto;
@@ -40,18 +42,24 @@ Animations*/
 		text-decoration: underline;}
 
 h1 {
+	position: fixed;
+	top: 0px;
+	left: 330px;
+	width: 600px;
+	padding: 10px;
 	background-color: #ccb8a3;
 	background-size: 100px;
 	margin: 10px 10px 10px 10px;
-	border: collapse;
 	border: 2px solid DeepPink;
 	text-align: center;
 	font-family: sue ellen francisco;
   	font-size: 48px;
   	color: #FF1493;
-  	width: 100;
+  	z-index: 10;
 }
 h2 {
+	position: relative;
+	top: 125px;
 	text-align: center;
 }
 h3 {
@@ -73,6 +81,8 @@ p { background-color: #fab3c9;
 #elem {
 	max-width: 940px;
 	min-width: 720px;
+	position: relative;
+	top: 125px;
 	margin: 10px auto 10px auto;
 	padding: 20px;
 	border: 4px double #000;
@@ -86,6 +96,12 @@ table {
 th, tr, td {border: 2px dotted LightPink;
 	padding: 2px;
 
+}
+
+#footer {
+	position: relative;
+	top: 125px;
+	text-align: center;
 }
 
 /*.column1 {
