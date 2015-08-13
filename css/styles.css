@@ -23,18 +23,35 @@ body {
 		text-decoration: underline;}
 
 h1 {background-color: #ccb8a3;
-	font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif; 
-  	font-size: 36px;
+	background-size: 100px;
+	border: collapse;
+	border: 2px solid DeepPink;
+	text-align: center;
+	font-family: sue ellen francisco;
+  	font-size: 48px;
+  	color: #FF1493;
+  	width: 100;
 	}
-h2 {font-family: 'Indie Flower', cursive;}
+h2 {}
 h3 {font-weight: bold;}
 h5 { }
 h6 { }
 
-p { padding: 5px;
+p { background-color: #fab3c9;
+	padding: 5px;
 	margin: 0px;
 	line-height: 1.4em;
-	text-align: justify;}
-p.tp {}
+	text-align: justify;
+	}
 
 div { }
+
+table {
+	
+	border: 5px solid DeepPink;
+	cellpadding: 20;
+}
+th, tr, td {border: 2px dotted LightPink;
+	cellpadding 20;
+
+}
