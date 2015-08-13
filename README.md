@@ -35,7 +35,8 @@ Tuesday 8.11.15
 Working on rendering method. Refactored as prototype. Partially working
 
 Tidied up code and comments.
-<<<<<<< HEAD
+
+Wednesday 8.12.15
 
 Events- added form to and buttons to html, working on added code to shops.
 
@@ -44,14 +45,12 @@ Still working on getting button to submit form and append table. So close, but y
 Got some help to get my form working to propagate and append to table.
 
 Added several css style to style sheet Starting to look good but so much more to add!
-Using this font: https://www.google.com/fonts/specimen/Indie+Flower
+Using this font: https://www.google.com/fonts/specimen/sue ellen francisco
 
+Thursday 8.12.15
 
-
-
-Events- added form to and buttons to html, working on added code to shops.
-
-Still working on getting button to submit form and append table. So close, but yet so far.
-
+Fixed up some more of the styles.
+Began working on layout.
+Working on getting elements to float.
 
 
