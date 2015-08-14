@@ -11,6 +11,7 @@ Animations*/
 	box-sizing: border-box;
 }
 */body {
+	text-align: center;
 	width: 90%;
 	margin: 0 auto;
 	background-color: #fffsea;
@@ -20,27 +21,28 @@ Animations*/
 #page {
 	position: relative;
 	top: 125px;
-	max-width: 940px;
-	min-width: 720px;
-	margin: 10px auto 10px auto;
+/*	max-width: 940px;
+	min-width: 720px;*/
+	/*margin: 10px auto 10px auto;*/
 	padding: 20px;
 	border: 4px double #000;
 }
 #main {
+	position: relative;
+	top: 125px;
 	min-width: 300px;
 	max-width: 600px;
 	margin: 0 auto;
 }
 
-	a:link {
-		color: #ff8fb1;
-		text-decoration: none;}
-	a:visited {
-		color: #01B0f0;}
-	a:hover {
-		color: #AEEE00;
-		text-decoration: underline;}
-
+a:link {
+	color: #ff8fb1;
+	text-decoration: none;}
+a:visited {
+	color: #01B0f0;}
+a:hover {
+	color: #AEEE00;
+	text-decoration: underline;}
 h1 {
 	position: fixed;
 	top: 0px;
@@ -73,14 +75,15 @@ h6 { }
 	width: 400px;	
 }*/
 
-p { background-color: #fab3c9;
+p { 
+	background-color: #fab3c9;
 	text-align: center;
 	width: 600px;
 	margin: 20px auto 20px auto;
 	}
 #elem {
-	max-width: 940px;
-	min-width: 720px;
+/*	max-width: 940px;
+	min-width: 720px;*/
 	position: relative;
 	top: 125px;
 	margin: 10px auto 10px auto;
@@ -120,14 +123,16 @@ th, tr, td {border: 2px dotted LightPink;
 	margin: 10px;
 }*/
 
-
 #topdonut {
 	position: absolute;
 	top: -75px;
 	left: -75px;
 }
-#botdonut {
+/*#botdonut {
 	position: absolute;
 	bottom: -135px;
 	right: 75px;
-}
+}*/
+
+
+
