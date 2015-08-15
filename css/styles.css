@@ -43,11 +43,14 @@ h5 { }
 h6 { }
 
 p { 
+	width: 800px;
+	margin-left: 20px;
 	text-align: left;
 	}
 
 #newRainyDay {
   float:left;
+  margin-right: 60px;
   width: 200px;
   vertical-align: super;
 }
@@ -72,6 +75,7 @@ input: focus, input: hover {
 
 fieldset {
 	width: 200px;
+	margin: 20px;
 	border: 2px solid DeepPink;
 	border-radius: 15%;
 	padding: 20px;
@@ -82,6 +86,7 @@ fieldset {
 
 legend {
 	background-color: ffffff;
+	margin: 20px;
 	border: 2px solid DeepPink;
 	border-radius: 10px;
 	padding: 10px 20px;
@@ -91,6 +96,7 @@ legend {
 
 table {
 	width: 600px;
+	margin: 20px;
 	border: 5px solid DeepPink;
 	border-radius: 35%;
 	padding: 30px;
@@ -102,13 +108,18 @@ th, tr, td {
 	padding: 5px;
 }
 
+.clear {
+	clear: both;
+}
+
 /*.plorum {
-	float: right;
+	float: left;
 }*/
 
 #tabRainyDay {
-  float: right;
-  vertical-align: super;
+  text-align: center;
+ /* float: right;
+  vertical-align: super;*/
   font-family: jura;
   font-size: 14px;
 }
@@ -140,6 +151,8 @@ th, tr, td {
 
 #footer {
 	text-align: center;
+/*	position: fixed;
+	bottom: 0px;*/
 }
 
 
