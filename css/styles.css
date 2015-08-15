@@ -8,11 +8,12 @@ Animations*/
 
 
 body {
+	text-align: center;
 	width: 1200px;
 	margin: 0 auto;
 	background-color: #00bfff;
 	color: #000000;
-	font-family: advent;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 }
 a:link {
@@ -44,22 +45,74 @@ h6 { }
 p { 
 	text-align: left;
 	}
+
+#newRainyDay {
+  float:left;
+  width: 200px;
+  vertical-align: super;
+}
+
+input {
+	font size: 120%;
+	color: 000000;
+	background-color: 00bfff;
+	border: 1px solid DeepPink;
+	border-radius: 5px;
+	padding: 5px 5px 5px 5px;
+	background-repeat: no-repeat;;
+	background-position: 8px 9px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+input: focus, input: hover {
+	background-color: #00bfff;
+	border: 1px solid DeepPink;
+}
+
+fieldset {
+	width: 200px;
+	border: 2px solid DeepPink;
+	border-radius: 15%;
+	padding: 20px;
+	text-align: left;
+	font-family: jura;
+	font-size: 16px;
+}
+
+legend {
+	background-color: ffffff;
+	border: 2px solid DeepPink;
+	border-radius: 10px;
+	padding: 10px 20px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
 table {
-	float: right;
 	width: 600px;
 	border: 5px solid DeepPink;
 	border-radius: 35%;
-	padding: 20px;
+	padding: 30px;
+	background-color: #ffffff;
 }
-th, tr, td {
-	border: 2px dotted LightPink;
-	padding: 2px;
 
+th, tr, td {
+	/*border: 2px dotted LightPink;*/
+	padding: 5px;
 }
+
+/*.plorum {
+	float: right;
+}*/
+
 #tabRainyDay {
-  float:right;
+  float: right;
   vertical-align: super;
+  font-family: jura;
+  font-size: 14px;
 }
+
 .spin1 {
   float: left;
   -webkit-animation-name: spinning;
@@ -79,58 +132,10 @@ th, tr, td {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
+
 @-webkit-keyframes spinning {
     from { -webkit-transform: rotate(0deg); }
     to { -webkit-transform: rotate(-360deg); }
-}
-
-#forRain {
-	font-family: jura;
-	font-size: 16px;
-}
-#tabRain {
-	font-family: jura;
-	font-size: 16px;
-}
-
-input {
-	font size: 120%;
-	color: 000000;
-	background-color: 00bfff;
-	border: 1px solid DeepPink;
-	border-radius: 5px;
-	padding: 5px 5px 5px 5px;
-	background-repeat: no-repeat;;
-	background-position: 8px 9px;
-	display: block;
-	margin-bottom: 10px;
-}
-input: focus, input: hover {
-	background-color: #00bfff;
-	border: 1px solid DeepPink;
-}
-
-}
-#newRainyDay {
-  float:right;
-  vertical-align: super;
-}
-
-fieldset {
-	width: 200px;
-	border: 2px solid DeepPink;
-	border-radius: 15%;
-	padding: 20px;
-	text-align: left;
-}
-
-legend {
-	background-color: ffffff;
-	border: 2px solid DeepPink;
-	border-radius: 10px;
-	padding: 10px 20px;
-	text-align: left;
-	text-transform: uppercase;
 }
 
 #footer {
