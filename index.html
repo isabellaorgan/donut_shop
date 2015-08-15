@@ -7,51 +7,47 @@
 
   <link  href="css/styles.css" rel="stylesheet" href="css/reset.css">
   <link  href="css/styles.css" rel="stylesheet" href="css/styles.css">
-  <link href='http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Sue+Ellen+Francisco|Oregano|Paprika|Bilbo|Covered+By+Your+Grace|Shadows+Into+Light|Shadows+Into+Light+Two|Rock+Salt|Permanent+Marker' rel='stylesheet' type='text/css'>
+  <link <link href='http://fonts.googleapis.com/css?family=Jura|Calligraffitti|Bad+Script|Syncopate|Cinzel+Decorative' rel='stylesheet' type='text/css'>
   </head>
 
 <body>
-
-
-  <div id="topdonut"><img src="img/pink_frost_corners.gif"></div>
+  
+  <!-- <img class="spin1" src="img/bluedonut.png"> -->
+  <img class="transdonut" src="img/bluedonuttrans.png">
+  <img class="spin2" src="img/bluedonut.png">
 
   	<!--This is the header-->
-  	<h1>D'OHNUT SHOP</h1>
-    <br>
-	<!--This project is the donut shop project-->
-  	<article><h2 id="main">Mmmmmm....dooonuts...*drool*</h2>
-    <div>
-  	<article><div id="main"><p> Top Pot Donuts, with franchises all over town, needs your help calculating the number of donuts each location must make every day. 
-    <br>The number of donuts to make depends on the hours of operation—7:00 AM to 6:00 PM—and a few factors unique to each location.</p>
+  	<h1>Rainy Day Donuts</h1>
     
-    <h3><p>The minimum number of customers per hour.
-    <br>
-    The maximum number of customers per hour.
-    <br>
-    The average number of donuts purchased per customer.</p></h3>
-    <br>
-    <p>Top Pot has asked you to write a program that simulates donut demand.
-  	</p>
-  	<br></div>
+	  <!--This project is the donut shop project-->
+  	<!-- <h2>Mmmmmm....dooonuts...*drool*</h2>
+    <br> -->
+      <br><br><br>
+<div class="clear">
+<div id="newRainyDay">
+    <fieldset>
+    <legend id="donut-form">Add a new shop here.</legend>
+     <div id="fortab"> 
+        <form id="donut-form">
+        <label for="locationname">Shop Name: </label>
+        <input name="locationname" id="locationname" type="text">
+        <label for="mincustomers">Minimum Customers per hour: </label>
+        <input name="mincustomers" id="mincustomers" type="text">
+        <label for="maxcustomers">Maximum Customers: </label>
+        <input name="maxcustomer" id="maxcustomer" type="text">
+        <label for="avgdonuts">Avgerage Donuts per hour: </label>
+        <input name="avgdonuts" id="avgdonuts" type="text">
+        <button id="donut-button" type="button">Create a new donut shop!</button>
+        </form>
+    </fieldset>
+  </div>
 
-     <div id="elem"> 
-      
-    <form id="donut-form">
-      <label for="locationname">Shop: </label>
-      <input name="locationname" id="locationname" type="text">
-      <label for="mincustomers">MinCustomers: </label>
-      <input name="mincustomers" id="mincustomers" type="text">
-      <label for="maxcustomers">MaxCustomers: </label>
-      <input name="maxcustomer" id="maxcustomer" type="text">
-      <label for="avgdonuts">AvgDonuts: </label>
-      <input name="avgdonuts" id="avgdonuts" type="text">
-      <button id="donut-button" type="button">Create a new donut shop!</button>
-    </form>
-  
-   <!-- This is where the table goes-->
+  <br><br>
+
+     <!-- This is where the table goes-->
+   <div class="tabRainyDay">
     <h3 id="shop-table"></h3> 
-      <div>
-        <table id ="donutShops">
+        <table id="donutShops">
           <tr>
             <th cellpadding="25">Location</th>
             <th>7:00 AM</th>
@@ -69,16 +65,16 @@
             <th>TOTAL</th>
           </tr>  
         </table>
-        </div> 
-      </div>
+    </div>
+    <!-- <br><br><br><br><br><br> -->
+  <div class="clearr">
+      <p> Liquor ipsum dolor sit amet mortlach daiquiri, glogg mai-tai, jacquin irish mist calvert hairy virgin cointreau, speyburn. Blue blazer cardhu, kahlua galliano dalmore matador, martell agent orange ectoplasm shirley temple black cosmopolitan edradour tamagozake crown royal. El presidente; ben nevis lime rickey aberlour grog colombia brandy alexander two fingers teaninich. Strathmill sake bomb canadian club bijou salty dog stolichnaya culto a la vida. Abhainn dearg, irish flag, "missouri mule, glentauchers fleischmann's," ballantine skyy ketel one irish flag vodka mcgovern piña colada. Bloody mary or bloodball 7 crown loch lomond. Highland park the goldeneye caribou lou kentucky tavern jacquin bunnahabhain. Widow's cork jack rose, "glenburgie; glenrothes prince shnell amaretto sour." Caesar scapa salty dog--sea breeze jose cuervo finlandia colombia irish flag.
 
-  <!--<form><p>If you like this game, email me.</p>
-  		<input type="email" name="email"/>
-  		<input type="submit" value="submit"/>
-  		</form>-->
+     Teaninich orange tundra, sambuca orgasm general sherman, ketel one, glen keith gin and tonic. Cosmopolitan horse's neck sazerac glen ord benromach gin and tonic. Tom and jerry bruichladdich mudslide jameson tonic and tequila kirsch, colombia shirley temple black. Kirsch french 75 amaretto sour, french 75 loch lomond. Jose cuervo leroux hiram walker, kir crown royal kir, "anisette missouri mule."<p>
+  </div>
 
 		<!--Standard footer-->
-		<footer id="footer"><h6>This fun game brought to you by Bella - B33 - CodeFellows</h6></footer>
+		<footer id="footer"><h6>This git show brought to you by Bella - B33 - CodeFellows</h6></footer>
   
   <script src="js/shops.js"></script>
 
