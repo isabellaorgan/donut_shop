@@ -6,7 +6,6 @@ Colors
 Layout
 Animations*/
 
-
 body {
 	text-align: center;
 	width: 1200px;
@@ -43,8 +42,10 @@ h5 { }
 h6 { }
 
 p { 
-	width: 800px;
+	height: 75%;
+	width: 75%;
 	margin-left: 20px;
+	padding-left: 20px;
 	text-align: left;
 	}
 
@@ -111,15 +112,18 @@ th, tr, td {
 .clear {
 	clear: both;
 }
+.clearr {
+	clear: both;
+}
 
 /*.plorum {
 	float: left;
 }*/
 
-#tabRainyDay {
-  text-align: center;
- /* float: right;
-  vertical-align: super;*/
+.tabRainyDay {
+ /* text-align: center;*/
+  float: right;
+  vertical-align: super;
   font-family: jura;
   font-size: 14px;
 }
