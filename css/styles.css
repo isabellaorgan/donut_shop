@@ -158,8 +158,14 @@ th, tr, td {
 
 @-webkit-keyframes spinning {
     from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(-360deg); }
+    to { -webkit-transform: rotate(-360deg); }	
 }
+.spin2:hover  {
+	    transform-origin: 100% 100%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+
 
 #footer {
 	text-align: center;
