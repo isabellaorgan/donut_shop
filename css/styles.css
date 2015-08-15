@@ -56,7 +56,7 @@ th, tr, td {
 
 }
 .spin1 {
-  float: right;
+  float: left;
   -webkit-animation-name: spinning;
   -webkit-animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
@@ -68,7 +68,7 @@ th, tr, td {
 }
 
 .spin2 {
-  float: left;
+  float: right;
   -webkit-animation-name: spinning;
   -webkit-animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
@@ -79,10 +79,15 @@ th, tr, td {
     to { -webkit-transform: rotate(-360deg); }
 }
 
-#fortab {
+#forRain {
 	font-family: jura;
 	font-size: 16px;
 }
+#tabRain {
+	font-family: jura;
+	font-size: 16px;
+}
+
 input {
 	font size: 120%;
 	color: 000000;
@@ -99,16 +104,23 @@ input: focus, input: hover {
 	background-color: #00bfff;
 	border: 1px solid DeepPink;
 }
+
 }
+#newRainyDay {
+  float:right;
+  vertical-align: super;
+}
+
 fieldset {
-	width: 30px;
-	border: 2px solid #000000;
-	border-radius: 10px;
+	width: 300px;
+	border: 10px solid #000000;
+	border-radius: 15%;
 	padding: 20px;
 	text-align: left;
 }
+
 legend {
-	background color: 00bfff;
+	background-color: ffffff;
 	border: 2px solid #000000;
 	border-radius: 10px;
 	padding: 10px 20px;
