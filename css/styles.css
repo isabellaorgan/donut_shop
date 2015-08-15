@@ -128,6 +128,14 @@ th, tr, td {
   font-size: 14px;
 }
 
+.transdonut {
+	position:fixed;
+	top: -60px;
+	left: -90px;
+	z-index: -5;
+	margin: 0px;
+}
+
 .spin1 {
   float: left;
   -webkit-animation-name: spinning;
