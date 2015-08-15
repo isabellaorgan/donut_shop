@@ -75,10 +75,10 @@ input: focus, input: hover {
 }
 
 fieldset {
-	width: 200px;
+	width: 300px;
 	margin: 20px;
 	border: 2px solid DeepPink;
-	border-radius: 15%;
+	border-radius: 10px;
 	padding: 20px;
 	text-align: left;
 	font-family: jura;
@@ -99,7 +99,7 @@ table {
 	width: 600px;
 	margin: 20px;
 	border: 5px solid DeepPink;
-	border-radius: 35%;
+	border-radius: 80px 50px;
 	padding: 30px;
 	background-color: #ffffff;
 }
@@ -155,6 +155,7 @@ th, tr, td {
 
 #footer {
 	text-align: center;
+	color: DeepPink;
 /*	position: fixed;
 	bottom: 0px;*/
 }
