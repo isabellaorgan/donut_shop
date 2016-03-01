@@ -37,8 +37,8 @@ DonutShop.prototype.calculateDailyDonuts = function () {
 DonutShop.prototype.render = function() {
   var getTable = document.getElementById('donutShops');
   var newRow = document.createElement('tr');
-  newRow.id=this.locationName;
-  newRow.innerHTML= this.locationName;
+  newRow.id = this.locationName;
+  newRow.innerHTML = this.locationName;
   getTable.appendChild(newRow);
   this.calculateDailyDonuts();
   var newCell;
@@ -65,7 +65,7 @@ var ballard = new DonutShop("Ballard", 8, 58, 3.75);
 downtown.render();
 capitolHill.render();
 southLakeUnion.render();
-wedgewood.render();
+wedgewood.render();Ti
 ballard.render();
 
 
