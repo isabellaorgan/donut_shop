@@ -54,5 +54,3 @@ Began working on layout.
 Working on getting elements to float.
 Made page fluid width, set header as fixed with elements below it set to relative
 Added donut image in absolute positioning.
-
-

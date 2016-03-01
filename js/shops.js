@@ -23,11 +23,10 @@ DonutShop.prototype.calculateDonutsPerHour = function() {
 };
 
 // Method calculating the sum of hourly totals
-DonutShop.prototype.calculateDailyDonuts = function () {
+DonutShop.prototype.calculateDailyDonuts = function() {
   var x;
   for (var i=0; i < 12; i++) {
     x = this.calculateDonutsPerHour();
-    // console.log(x);
     this.hourlyTotals.push(x);
     this.dailyTotals = this.dailyTotals + x;
   }
@@ -37,10 +36,11 @@ DonutShop.prototype.calculateDailyDonuts = function () {
 DonutShop.prototype.render = function() {
   var getTable = document.getElementById('donutShops');
   var newRow = document.createElement('tr');
-  newRow.id=this.locationName;
-  newRow.innerHTML= this.locationName;
+  newRow.id = this.locationName;
+  newRow.innerHTML = this.locationName;
   getTable.appendChild(newRow);
   this.calculateDailyDonuts();
+
   var newCell;
 
   for (var i = 0; i < 12; i++) {
@@ -79,12 +79,7 @@ var handleShopSubmit = function() {
   var newMaxcustomers = parseInt(document.getElementById('maxcustomer').value);
   var avgDonuts = parseInt(document.getElementById('avgdonuts').value);
   var newShop = new DonutShop(newLocation, newMincustomers, newMaxcustomers, avgDonuts);
-  console.log(newShop);
   newShop.render();
-  // var donutData = [];
 };
 
 donutButton.addEventListener('click', handleShopSubmit);
-
-
-
