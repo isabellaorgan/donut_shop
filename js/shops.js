@@ -1,4 +1,3 @@
-
 'use strict';
 
 // Constructor function with location specific property attributes

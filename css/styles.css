@@ -16,9 +16,11 @@ body {
 }
 a:link {
   color: #14c7de;
-  text-decoration: none;}
+  text-decoration: none;
+}
 a:visited {
-  color: #01B0f0;}
+  color: #01B0f0;
+}
 a:hover {
   color: #AEEE00;
   text-decoration: underline;
