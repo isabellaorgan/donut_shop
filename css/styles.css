@@ -6,106 +6,97 @@ Layout
 Animations*/
 
 body {
-	text-align: center;
-	width: 90%;
-	margin: 0 auto;
-	background-color: #00bfff;
-	color: #000000;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #00bfff;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 a:link {
-	color: #14c7de;
-	text-decoration: none;}
+  color: #14c7de;
+  text-decoration: none;}
 a:visited {
-	color: #01B0f0;}
+  color: #01B0f0;}
 a:hover {
-	color: #AEEE00;
-	text-decoration: underline;
+  color: #AEEE00;
+  text-decoration: underline;
 }
-
 h1 {
-	text-align: center;
-	letter-spacing: 15px;
-	font-family: bad script;
+  text-align: center;
+  letter-spacing: 15px;
+  font-family: bad script;
   font-size: 56px;
   color: #000000;
 }
 h2 {
-	text-align: center;
+  text-align: center;
 }
 h3 {
-	font-weight: bold;
+  font-weight: bold;
 }
-
 p { 
-	height: 75%;
-	width: 75%;
-	margin-left: 20px;
-	padding-left: 20px;
-	text-align: left;
-	}
-
+  height: 75%;
+  width: 75%;
+  margin-left: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
 input {
-	font-size: 120%;
-	color: inherit;
-	background-color: #00bfff;
-	border: 1px solid DeepPink;
-	border-radius: 5px;
-	padding: 5px 5px 5px 5px;
-	background-repeat: no-repeat;;
-	background-position: 8px 9px;
-	display: block;
-	margin-bottom: 10px;
+  font-size: 120%;
+  color: inherit;
+  background-color: #00bfff;
+  border: 1px solid DeepPink;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  background-repeat: no-repeat;;
+  background-position: 8px 9px;
+  display: block;
+  margin-bottom: 10px;
 }
-
 input: focus, input: hover {
-	background-color: #00bfff;
-	border: 1px solid DeepPink;
+  background-color: #00bfff;
+  border: 1px solid DeepPink;
 }
-
 fieldset {
-	width: 300px;
-	margin: 20px;
-	border: 2px solid DeepPink;
-	border-radius: 10px;
-	padding: 20px;
-	text-align: left;
-	font-family: jura;
-	font-size: 16px;
+  width: 300px;
+  margin: 20px;
+  border: 2px solid DeepPink;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  font-family: jura;
+  font-size: 16px;
 }
-
 legend {
-	background-color: #ffffff;
-	margin: 20px;
-	border: 2px solid DeepPink;
-	border-radius: 10px;
-	padding: 10px 20px;
-	text-align: left;
-	text-transform: uppercase;
+  background-color: #ffffff;
+  margin: 20px;
+  border: 2px solid DeepPink;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: uppercase;
 }
-
 table {
-	width: 600px;
-	margin: 20px;
-	border: 5px solid DeepPink;
-	border-radius: 80px 50px;
-	padding: 30px;
-	background-color: #ffffff;
+  width: 600px;
+  margin: 20px;
+  border: 5px solid DeepPink;
+  border-radius: 80px 50px;
+  padding: 30px;
+  background-color: #ffffff;
 }
-
 th, tr, td {
-	padding: 5px;
+  padding: 5px;
 }
-
 .clear {
-	clear: both;
+  clear: both;
 }
 .clearr {
-	clear: both;
+  clear: both;
 }
 .newRainyDay {
-  float:left;
+  float: left;
   margin-right: 60px;
   width: 200px;
   vertical-align: super;
@@ -117,11 +108,11 @@ th, tr, td {
   font-size: 14px;
 }
 .transdonut {
-	position:fixed;
-	top: -60px;
-	left: -90px;
-	z-index: -5;
-	margin: 0;
+  position: fixed;
+  top: -60px;
+  left: -90px;
+  z-index: -5;
+  margin: 0;
 }
 .spin1 {
   float: left;
@@ -141,17 +132,15 @@ th, tr, td {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-
 @-webkit-keyframes spinning {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(-360deg); }	
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(-360deg); }	
 }
 .spin2:hover  {
-	    transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
   -webkit-transition: -webkit-transform .8s ease-in-out;
   transition: transform .8s ease-in-out;
 }
-
 .footer {
-	text-align: center;
+  text-align: center;
 }
